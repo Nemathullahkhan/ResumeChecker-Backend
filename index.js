@@ -2,9 +2,9 @@ const express = require("express");
 
 const app = express();
 
-app.get("/",(req,res)=>{
-    res.send("Hello world");
+app.get("/api/test",(req,res)=>{
+    res.send("Working");
 })
-app.listen(3001, () => {
-    console.log("Server running on port 3001");
+app.listen(8000, () => {
+    console.log("Server running on port 8000");
 }); 
