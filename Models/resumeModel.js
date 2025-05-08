@@ -7,7 +7,10 @@ const resumeModel = new mongoose.Schema({
     },
     jobDescription: {
         type: String,
-        required: true
+    },
+    createdAt :{
+        type:Date,
+        default:Date.now
     }
 });
 const Resume = mongoose.model("resume", resumeModel);
