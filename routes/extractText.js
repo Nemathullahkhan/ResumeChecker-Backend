@@ -21,5 +21,9 @@ const { pdfUpload } = require("../controllers/extractText");
 
 router.post("/", upload.single("resume"), pdfUpload);
 
+router.get("/status", (req, res) => {
+  return res.send("Hello World");
+});
+
 
 module.exports = router;
